@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D26CE247199C4818002B88D3 /* SwiftBean.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26CE246199C4818002B88D3 /* SwiftBean.framework */; };
+		D285FB6D199B35830004E5BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285FB6C199B35830004E5BA /* main.swift */; };
+		D285FB6F199B35830004E5BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285FB6E199B35830004E5BA /* AppDelegate.swift */; };
+		D285FB71199B35830004E5BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D285FB70199B35830004E5BA /* Images.xcassets */; };
+		D285FB74199B35830004E5BA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D285FB72199B35830004E5BA /* MainMenu.xib */; };
+		D285FB80199B35830004E5BA /* botTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285FB7F199B35830004E5BA /* botTests.swift */; };
+		D285FC63199C19670004E5BA /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = D285FC62199C19670004E5BA /* test.m */; };
+		D285FC9C199C2CFC0004E5BA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D285FC9A199C2CFC0004E5BA /* CoreBluetooth.framework */; };
+		D285FC9D199C2CFC0004E5BA /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D285FC9B199C2CFC0004E5BA /* IOBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D285FB7A199B35830004E5BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D285FB5F199B35830004E5BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D285FB66199B35830004E5BA;
+			remoteInfo = bot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D26CE246199C4818002B88D3 /* SwiftBean.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftBean.framework; path = ../SwiftBean/build/Debug/SwiftBean.framework; sourceTree = "<group>"; };
+		D285FB67199B35830004E5BA /* bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D285FB6B199B35830004E5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D285FB6C199B35830004E5BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D285FB6E199B35830004E5BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D285FB70199B35830004E5BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D285FB73199B35830004E5BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D285FB79199B35830004E5BA /* botTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = botTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D285FB7E199B35830004E5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D285FB7F199B35830004E5BA /* botTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = botTests.swift; sourceTree = "<group>"; };
+		D285FC59199B82140004E5BA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		D285FC61199C19670004E5BA /* bot-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bot-Bridging-Header.h"; sourceTree = "<group>"; };
+		D285FC62199C19670004E5BA /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		D285FC98199C2C830004E5BA /* Bean.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bean.framework; path = "../../Library/Developer/Xcode/DerivedData/bot-gekdwnfjxafyqperancppqxxkeva/Build/Products/Debug/Bean.framework"; sourceTree = "<group>"; };
+		D285FC9A199C2CFC0004E5BA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D285FC9B199C2CFC0004E5BA /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D285FB64199B35830004E5BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26CE247199C4818002B88D3 /* SwiftBean.framework in Frameworks */,
+				D285FC9C199C2CFC0004E5BA /* CoreBluetooth.framework in Frameworks */,
+				D285FC9D199C2CFC0004E5BA /* IOBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D285FB76199B35830004E5BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D285FB5E199B35830004E5BA = {
+			isa = PBXGroup;
+			children = (
+				D26CE246199C4818002B88D3 /* SwiftBean.framework */,
+				D285FC9A199C2CFC0004E5BA /* CoreBluetooth.framework */,
+				D285FC9B199C2CFC0004E5BA /* IOBluetooth.framework */,
+				D285FC98199C2C830004E5BA /* Bean.framework */,
+				D285FC62199C19670004E5BA /* test.m */,
+				D285FC59199B82140004E5BA /* MyPlayground.playground */,
+				D285FB69199B35830004E5BA /* bot */,
+				D285FB7C199B35830004E5BA /* botTests */,
+				D285FB68199B35830004E5BA /* Products */,
+				D285FC61199C19670004E5BA /* bot-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		D285FB68199B35830004E5BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D285FB67199B35830004E5BA /* bot.app */,
+				D285FB79199B35830004E5BA /* botTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D285FB69199B35830004E5BA /* bot */ = {
+			isa = PBXGroup;
+			children = (
+				D285FB6E199B35830004E5BA /* AppDelegate.swift */,
+				D285FB70199B35830004E5BA /* Images.xcassets */,
+				D285FB72199B35830004E5BA /* MainMenu.xib */,
+				D285FB6A199B35830004E5BA /* Supporting Files */,
+			);
+			path = bot;
+			sourceTree = "<group>";
+		};
+		D285FB6A199B35830004E5BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D285FB6B199B35830004E5BA /* Info.plist */,
+				D285FB6C199B35830004E5BA /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D285FB7C199B35830004E5BA /* botTests */ = {
+			isa = PBXGroup;
+			children = (
+				D285FB7F199B35830004E5BA /* botTests.swift */,
+				D285FB7D199B35830004E5BA /* Supporting Files */,
+			);
+			path = botTests;
+			sourceTree = "<group>";
+		};
+		D285FB7D199B35830004E5BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D285FB7E199B35830004E5BA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D285FB66199B35830004E5BA /* bot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D285FB83199B35830004E5BA /* Build configuration list for PBXNativeTarget "bot" */;
+			buildPhases = (
+				D285FB63199B35830004E5BA /* Sources */,
+				D285FB64199B35830004E5BA /* Frameworks */,
+				D285FB65199B35830004E5BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bot;
+			productName = bot;
+			productReference = D285FB67199B35830004E5BA /* bot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D285FB78199B35830004E5BA /* botTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D285FB86199B35830004E5BA /* Build configuration list for PBXNativeTarget "botTests" */;
+			buildPhases = (
+				D285FB75199B35830004E5BA /* Sources */,
+				D285FB76199B35830004E5BA /* Frameworks */,
+				D285FB77199B35830004E5BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D285FB7B199B35830004E5BA /* PBXTargetDependency */,
+			);
+			name = botTests;
+			productName = botTests;
+			productReference = D285FB79199B35830004E5BA /* botTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D285FB5F199B35830004E5BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Scott Wadden";
+				TargetAttributes = {
+					D285FB66199B35830004E5BA = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					D285FB78199B35830004E5BA = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = D285FB66199B35830004E5BA;
+					};
+				};
+			};
+			buildConfigurationList = D285FB62199B35830004E5BA /* Build configuration list for PBXProject "bot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D285FB5E199B35830004E5BA;
+			productRefGroup = D285FB68199B35830004E5BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D285FB66199B35830004E5BA /* bot */,
+				D285FB78199B35830004E5BA /* botTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D285FB65199B35830004E5BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D285FB71199B35830004E5BA /* Images.xcassets in Resources */,
+				D285FB74199B35830004E5BA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D285FB77199B35830004E5BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D285FB63199B35830004E5BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D285FB6F199B35830004E5BA /* AppDelegate.swift in Sources */,
+				D285FB6D199B35830004E5BA /* main.swift in Sources */,
+				D285FC63199C19670004E5BA /* test.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D285FB75199B35830004E5BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D285FB80199B35830004E5BA /* botTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D285FB7B199B35830004E5BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D285FB66199B35830004E5BA /* bot */;
+			targetProxy = D285FB7A199B35830004E5BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D285FB72199B35830004E5BA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D285FB73199B35830004E5BA /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D285FB81199B35830004E5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D285FB82199B35830004E5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D285FB84199B35830004E5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/bot-gekdwnfjxafyqperancppqxxkeva/Build/Products/Debug",
+					/Users/scott/bot/SwiftBean/build/Debug,
+				);
+				INFOPLIST_FILE = bot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/scott/bot/Bean-iOS-OSX-SDK/Bean",
+					OSX,
+					Static,
+					Library/build/Debug,
+					"/Users/scott/bot/Bean-iOS-OSX-SDK/Bean",
+					OSX,
+					Static,
+					Library/build/Debug,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bot-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D285FB85199B35830004E5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/bot-gekdwnfjxafyqperancppqxxkeva/Build/Products/Debug",
+					/Users/scott/bot/SwiftBean/build/Debug,
+				);
+				INFOPLIST_FILE = bot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/scott/bot/Bean-iOS-OSX-SDK/Bean",
+					OSX,
+					Static,
+					Library/build/Debug,
+					"/Users/scott/bot/Bean-iOS-OSX-SDK/Bean",
+					OSX,
+					Static,
+					Library/build/Debug,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bot-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		D285FB87199B35830004E5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = botTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bot.app/Contents/MacOS/bot";
+			};
+			name = Debug;
+		};
+		D285FB88199B35830004E5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = botTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bot.app/Contents/MacOS/bot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D285FB62199B35830004E5BA /* Build configuration list for PBXProject "bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D285FB81199B35830004E5BA /* Debug */,
+				D285FB82199B35830004E5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D285FB83199B35830004E5BA /* Build configuration list for PBXNativeTarget "bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D285FB84199B35830004E5BA /* Debug */,
+				D285FB85199B35830004E5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D285FB86199B35830004E5BA /* Build configuration list for PBXNativeTarget "botTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D285FB87199B35830004E5BA /* Debug */,
+				D285FB88199B35830004E5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D285FB5F199B35830004E5BA /* Project object */;
+}

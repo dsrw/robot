@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D26CE233199C47D8002B88D3 /* SwiftBean.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE232199C47D8002B88D3 /* SwiftBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D26CE23D199C47D8002B88D3 /* SwiftBeanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE23C199C47D8002B88D3 /* SwiftBeanTests.m */; };
+		D26CE249199C4889002B88D3 /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26CE248199C4889002B88D3 /* IOBluetooth.framework */; };
+		D26CE24B199C4891002B88D3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26CE24A199C4891002B88D3 /* CoreBluetooth.framework */; };
+		D26CE374199C49A9002B88D3 /* AppMessagingLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE33B199C49A9002B88D3 /* AppMessagingLayer.h */; };
+		D26CE375199C49A9002B88D3 /* AppMessagingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE33C199C49A9002B88D3 /* AppMessagingLayer.m */; };
+		D26CE376199C49A9002B88D3 /* BEAN_Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE33D199C49A9002B88D3 /* BEAN_Globals.h */; };
+		D26CE377199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE33F199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.h */; };
+		D26CE378199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE340199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.m */; };
+		D26CE379199C49A9002B88D3 /* CBPeripheral+UniqueId.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE341199C49A9002B88D3 /* CBPeripheral+UniqueId.h */; };
+		D26CE37A199C49A9002B88D3 /* CBPeripheral+UniqueId.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE342199C49A9002B88D3 /* CBPeripheral+UniqueId.m */; };
+		D26CE37B199C49A9002B88D3 /* NSData+CRC.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE343199C49A9002B88D3 /* NSData+CRC.h */; };
+		D26CE37C199C49A9002B88D3 /* NSData+CRC.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE344199C49A9002B88D3 /* NSData+CRC.m */; };
+		D26CE37D199C49A9002B88D3 /* BEAN_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE346199C49A9002B88D3 /* BEAN_Helper.h */; };
+		D26CE37E199C49A9002B88D3 /* BEAN_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE347199C49A9002B88D3 /* BEAN_Helper.m */; };
+		D26CE37F199C49A9002B88D3 /* PTDBEAN_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE348199C49A9002B88D3 /* PTDBEAN_Helper.h */; };
+		D26CE380199C49A9002B88D3 /* PTDBEAN_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE349199C49A9002B88D3 /* PTDBEAN_Helper.m */; };
+		D26CE381199C49A9002B88D3 /* BatteryProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE34C199C49A9002B88D3 /* BatteryProfile.h */; };
+		D26CE382199C49A9002B88D3 /* BatteryProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE34D199C49A9002B88D3 /* BatteryProfile.m */; };
+		D26CE383199C49A9002B88D3 /* BleProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE34E199C49A9002B88D3 /* BleProfile.h */; };
+		D26CE384199C49A9002B88D3 /* BleProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE34F199C49A9002B88D3 /* BleProfile.m */; };
+		D26CE385199C49A9002B88D3 /* DevInfoProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE351199C49A9002B88D3 /* DevInfoProfile.h */; };
+		D26CE386199C49A9002B88D3 /* DevInfoProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE352199C49A9002B88D3 /* DevInfoProfile.m */; };
+		D26CE387199C49A9002B88D3 /* GattSerialProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE354199C49A9002B88D3 /* GattSerialProfile.h */; };
+		D26CE388199C49A9002B88D3 /* GattSerialProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE355199C49A9002B88D3 /* GattSerialProfile.m */; };
+		D26CE389199C49A9002B88D3 /* GattCharacteristicHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE357199C49A9002B88D3 /* GattCharacteristicHandler.h */; };
+		D26CE38A199C49A9002B88D3 /* GattCharacteristicObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE358199C49A9002B88D3 /* GattCharacteristicObserver.h */; };
+		D26CE38B199C49A9002B88D3 /* GattPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE359199C49A9002B88D3 /* GattPacket.h */; };
+		D26CE38C199C49A9002B88D3 /* GattPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE35A199C49A9002B88D3 /* GattPacket.m */; };
+		D26CE38D199C49A9002B88D3 /* GattSerialMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE35B199C49A9002B88D3 /* GattSerialMessage.h */; };
+		D26CE38E199C49A9002B88D3 /* GattSerialMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE35C199C49A9002B88D3 /* GattSerialMessage.m */; };
+		D26CE38F199C49A9002B88D3 /* GattSerialMessageRxAssembler.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE35D199C49A9002B88D3 /* GattSerialMessageRxAssembler.h */; };
+		D26CE390199C49A9002B88D3 /* GattSerialMessageRxAssembler.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE35E199C49A9002B88D3 /* GattSerialMessageRxAssembler.m */; };
+		D26CE391199C49A9002B88D3 /* GattSerialTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE35F199C49A9002B88D3 /* GattSerialTransport.h */; };
+		D26CE392199C49A9002B88D3 /* GattSerialTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE360199C49A9002B88D3 /* GattSerialTransport.m */; };
+		D26CE393199C49A9002B88D3 /* GattTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE361199C49A9002B88D3 /* GattTransport.h */; };
+		D26CE394199C49A9002B88D3 /* GattTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE362199C49A9002B88D3 /* GattTransport.m */; };
+		D26CE395199C49A9002B88D3 /* oad.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE364199C49A9002B88D3 /* oad.h */; };
+		D26CE396199C49A9002B88D3 /* OadProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE365199C49A9002B88D3 /* OadProfile.h */; };
+		D26CE397199C49A9002B88D3 /* OadProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE366199C49A9002B88D3 /* OadProfile.m */; };
+		D26CE398199C49A9002B88D3 /* Profile_Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE367199C49A9002B88D3 /* Profile_Protocol.h */; };
+		D26CE399199C49A9002B88D3 /* ProfileDelegate_Protocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE368199C49A9002B88D3 /* ProfileDelegate_Protocol.h */; };
+		D26CE39A199C49A9002B88D3 /* PTDBleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE369199C49A9002B88D3 /* PTDBleDevice.m */; };
+		D26CE39B199C49A9002B88D3 /* PTDBean.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE36A199C49A9002B88D3 /* PTDBean.m */; };
+		D26CE39C199C49A9002B88D3 /* PTDBean+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE36B199C49A9002B88D3 /* PTDBean+Protected.h */; };
+		D26CE39D199C49A9002B88D3 /* PTDBeanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE36C199C49A9002B88D3 /* PTDBeanManager.m */; };
+		D26CE39E199C49A9002B88D3 /* PTDBeanManager+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE36D199C49A9002B88D3 /* PTDBeanManager+Protected.h */; };
+		D26CE39F199C49A9002B88D3 /* PTDBeanRadioConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D26CE36E199C49A9002B88D3 /* PTDBeanRadioConfig.m */; };
+		D26CE3A0199C49A9002B88D3 /* PTDBean.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE370199C49A9002B88D3 /* PTDBean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D26CE3A1199C49A9002B88D3 /* PTDBeanManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE371199C49A9002B88D3 /* PTDBeanManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D26CE3A2199C49A9002B88D3 /* PTDBeanRadioConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE372199C49A9002B88D3 /* PTDBeanRadioConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D26CE3A3199C49A9002B88D3 /* PTDBleDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE373199C49A9002B88D3 /* PTDBleDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D26CE3A5199C4A82002B88D3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26CE3A4199C4A82002B88D3 /* Cocoa.framework */; };
+		D26CE3A9199C4B46002B88D3 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = D26CE3A8199C4B46002B88D3 /* PrefixHeader.pch */; };
+		D26CE3AC199C4CEE002B88D3 /* AppMessages.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE3AA199C4CEE002B88D3 /* AppMessages.h */; };
+		D26CE3AD199C4CEE002B88D3 /* AppMessageTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE3AB199C4CEE002B88D3 /* AppMessageTypes.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D26CE22D199C47D8002B88D3 /* SwiftBean.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftBean.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26CE231199C47D8002B88D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D26CE232199C47D8002B88D3 /* SwiftBean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftBean.h; sourceTree = "<group>"; };
+		D26CE238199C47D8002B88D3 /* SwiftBeanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftBeanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26CE23B199C47D8002B88D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D26CE23C199C47D8002B88D3 /* SwiftBeanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftBeanTests.m; sourceTree = "<group>"; };
+		D26CE248199C4889002B88D3 /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		D26CE24A199C4891002B88D3 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D26CE33B199C49A9002B88D3 /* AppMessagingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessagingLayer.h; sourceTree = "<group>"; };
+		D26CE33C199C49A9002B88D3 /* AppMessagingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppMessagingLayer.m; sourceTree = "<group>"; };
+		D26CE33D199C49A9002B88D3 /* BEAN_Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAN_Globals.h; sourceTree = "<group>"; };
+		D26CE33F199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+isConnected_Universal.h"; sourceTree = "<group>"; };
+		D26CE340199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+isConnected_Universal.m"; sourceTree = "<group>"; };
+		D26CE341199C49A9002B88D3 /* CBPeripheral+UniqueId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBPeripheral+UniqueId.h"; sourceTree = "<group>"; };
+		D26CE342199C49A9002B88D3 /* CBPeripheral+UniqueId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBPeripheral+UniqueId.m"; sourceTree = "<group>"; };
+		D26CE343199C49A9002B88D3 /* NSData+CRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CRC.h"; sourceTree = "<group>"; };
+		D26CE344199C49A9002B88D3 /* NSData+CRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CRC.m"; sourceTree = "<group>"; };
+		D26CE346199C49A9002B88D3 /* BEAN_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEAN_Helper.h; sourceTree = "<group>"; };
+		D26CE347199C49A9002B88D3 /* BEAN_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEAN_Helper.m; sourceTree = "<group>"; };
+		D26CE348199C49A9002B88D3 /* PTDBEAN_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBEAN_Helper.h; sourceTree = "<group>"; };
+		D26CE349199C49A9002B88D3 /* PTDBEAN_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBEAN_Helper.m; sourceTree = "<group>"; };
+		D26CE34C199C49A9002B88D3 /* BatteryProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BatteryProfile.h; sourceTree = "<group>"; };
+		D26CE34D199C49A9002B88D3 /* BatteryProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BatteryProfile.m; sourceTree = "<group>"; };
+		D26CE34E199C49A9002B88D3 /* BleProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleProfile.h; sourceTree = "<group>"; };
+		D26CE34F199C49A9002B88D3 /* BleProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleProfile.m; sourceTree = "<group>"; };
+		D26CE351199C49A9002B88D3 /* DevInfoProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevInfoProfile.h; sourceTree = "<group>"; };
+		D26CE352199C49A9002B88D3 /* DevInfoProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevInfoProfile.m; sourceTree = "<group>"; };
+		D26CE354199C49A9002B88D3 /* GattSerialProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattSerialProfile.h; sourceTree = "<group>"; };
+		D26CE355199C49A9002B88D3 /* GattSerialProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattSerialProfile.m; sourceTree = "<group>"; };
+		D26CE357199C49A9002B88D3 /* GattCharacteristicHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattCharacteristicHandler.h; sourceTree = "<group>"; };
+		D26CE358199C49A9002B88D3 /* GattCharacteristicObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattCharacteristicObserver.h; sourceTree = "<group>"; };
+		D26CE359199C49A9002B88D3 /* GattPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattPacket.h; sourceTree = "<group>"; };
+		D26CE35A199C49A9002B88D3 /* GattPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattPacket.m; sourceTree = "<group>"; };
+		D26CE35B199C49A9002B88D3 /* GattSerialMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattSerialMessage.h; sourceTree = "<group>"; };
+		D26CE35C199C49A9002B88D3 /* GattSerialMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattSerialMessage.m; sourceTree = "<group>"; };
+		D26CE35D199C49A9002B88D3 /* GattSerialMessageRxAssembler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattSerialMessageRxAssembler.h; sourceTree = "<group>"; };
+		D26CE35E199C49A9002B88D3 /* GattSerialMessageRxAssembler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattSerialMessageRxAssembler.m; sourceTree = "<group>"; };
+		D26CE35F199C49A9002B88D3 /* GattSerialTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattSerialTransport.h; sourceTree = "<group>"; };
+		D26CE360199C49A9002B88D3 /* GattSerialTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattSerialTransport.m; sourceTree = "<group>"; };
+		D26CE361199C49A9002B88D3 /* GattTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GattTransport.h; sourceTree = "<group>"; };
+		D26CE362199C49A9002B88D3 /* GattTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GattTransport.m; sourceTree = "<group>"; };
+		D26CE364199C49A9002B88D3 /* oad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = oad.h; sourceTree = "<group>"; };
+		D26CE365199C49A9002B88D3 /* OadProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OadProfile.h; sourceTree = "<group>"; };
+		D26CE366199C49A9002B88D3 /* OadProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OadProfile.m; sourceTree = "<group>"; };
+		D26CE367199C49A9002B88D3 /* Profile_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile_Protocol.h; sourceTree = "<group>"; };
+		D26CE368199C49A9002B88D3 /* ProfileDelegate_Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileDelegate_Protocol.h; sourceTree = "<group>"; };
+		D26CE369199C49A9002B88D3 /* PTDBleDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBleDevice.m; sourceTree = "<group>"; };
+		D26CE36A199C49A9002B88D3 /* PTDBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBean.m; sourceTree = "<group>"; };
+		D26CE36B199C49A9002B88D3 /* PTDBean+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTDBean+Protected.h"; sourceTree = "<group>"; };
+		D26CE36C199C49A9002B88D3 /* PTDBeanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBeanManager.m; sourceTree = "<group>"; };
+		D26CE36D199C49A9002B88D3 /* PTDBeanManager+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PTDBeanManager+Protected.h"; sourceTree = "<group>"; };
+		D26CE36E199C49A9002B88D3 /* PTDBeanRadioConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTDBeanRadioConfig.m; sourceTree = "<group>"; };
+		D26CE370199C49A9002B88D3 /* PTDBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBean.h; sourceTree = "<group>"; };
+		D26CE371199C49A9002B88D3 /* PTDBeanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBeanManager.h; sourceTree = "<group>"; };
+		D26CE372199C49A9002B88D3 /* PTDBeanRadioConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBeanRadioConfig.h; sourceTree = "<group>"; };
+		D26CE373199C49A9002B88D3 /* PTDBleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTDBleDevice.h; sourceTree = "<group>"; };
+		D26CE3A4199C4A82002B88D3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D26CE3A8199C4B46002B88D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D26CE3AA199C4CEE002B88D3 /* AppMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessages.h; sourceTree = "<group>"; };
+		D26CE3AB199C4CEE002B88D3 /* AppMessageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessageTypes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D26CE229199C47D8002B88D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26CE3A5199C4A82002B88D3 /* Cocoa.framework in Frameworks */,
+				D26CE249199C4889002B88D3 /* IOBluetooth.framework in Frameworks */,
+				D26CE24B199C4891002B88D3 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26CE235199C47D8002B88D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D26CE223199C47D8002B88D3 = {
+			isa = PBXGroup;
+			children = (
+				D26CE3A4199C4A82002B88D3 /* Cocoa.framework */,
+				D26CE24A199C4891002B88D3 /* CoreBluetooth.framework */,
+				D26CE248199C4889002B88D3 /* IOBluetooth.framework */,
+				D26CE22F199C47D8002B88D3 /* SwiftBean */,
+				D26CE239199C47D8002B88D3 /* SwiftBeanTests */,
+				D26CE22E199C47D8002B88D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D26CE22E199C47D8002B88D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE22D199C47D8002B88D3 /* SwiftBean.framework */,
+				D26CE238199C47D8002B88D3 /* SwiftBeanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D26CE22F199C47D8002B88D3 /* SwiftBean */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE3AA199C4CEE002B88D3 /* AppMessages.h */,
+				D26CE3AB199C4CEE002B88D3 /* AppMessageTypes.h */,
+				D26CE3A8199C4B46002B88D3 /* PrefixHeader.pch */,
+				D26CE33A199C49A9002B88D3 /* AppMessages */,
+				D26CE33D199C49A9002B88D3 /* BEAN_Globals.h */,
+				D26CE33E199C49A9002B88D3 /* Categories */,
+				D26CE345199C49A9002B88D3 /* Helper */,
+				D26CE34A199C49A9002B88D3 /* Profiles */,
+				D26CE36A199C49A9002B88D3 /* PTDBean.m */,
+				D26CE36B199C49A9002B88D3 /* PTDBean+Protected.h */,
+				D26CE36C199C49A9002B88D3 /* PTDBeanManager.m */,
+				D26CE36D199C49A9002B88D3 /* PTDBeanManager+Protected.h */,
+				D26CE36E199C49A9002B88D3 /* PTDBeanRadioConfig.m */,
+				D26CE232199C47D8002B88D3 /* SwiftBean.h */,
+				D26CE36F199C49A9002B88D3 /* Public */,
+				D26CE230199C47D8002B88D3 /* Supporting Files */,
+			);
+			path = SwiftBean;
+			sourceTree = "<group>";
+		};
+		D26CE230199C47D8002B88D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE231199C47D8002B88D3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D26CE239199C47D8002B88D3 /* SwiftBeanTests */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE23C199C47D8002B88D3 /* SwiftBeanTests.m */,
+				D26CE23A199C47D8002B88D3 /* Supporting Files */,
+			);
+			path = SwiftBeanTests;
+			sourceTree = "<group>";
+		};
+		D26CE23A199C47D8002B88D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE23B199C47D8002B88D3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D26CE33A199C49A9002B88D3 /* AppMessages */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE33B199C49A9002B88D3 /* AppMessagingLayer.h */,
+				D26CE33C199C49A9002B88D3 /* AppMessagingLayer.m */,
+			);
+			path = AppMessages;
+			sourceTree = "<group>";
+		};
+		D26CE33E199C49A9002B88D3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE33F199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.h */,
+				D26CE340199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.m */,
+				D26CE341199C49A9002B88D3 /* CBPeripheral+UniqueId.h */,
+				D26CE342199C49A9002B88D3 /* CBPeripheral+UniqueId.m */,
+				D26CE343199C49A9002B88D3 /* NSData+CRC.h */,
+				D26CE344199C49A9002B88D3 /* NSData+CRC.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D26CE345199C49A9002B88D3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE346199C49A9002B88D3 /* BEAN_Helper.h */,
+				D26CE347199C49A9002B88D3 /* BEAN_Helper.m */,
+				D26CE348199C49A9002B88D3 /* PTDBEAN_Helper.h */,
+				D26CE349199C49A9002B88D3 /* PTDBEAN_Helper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		D26CE34A199C49A9002B88D3 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE34B199C49A9002B88D3 /* Battery */,
+				D26CE34E199C49A9002B88D3 /* BleProfile.h */,
+				D26CE34F199C49A9002B88D3 /* BleProfile.m */,
+				D26CE350199C49A9002B88D3 /* Device Info */,
+				D26CE353199C49A9002B88D3 /* Gatt Serial */,
+				D26CE363199C49A9002B88D3 /* OAD */,
+				D26CE367199C49A9002B88D3 /* Profile_Protocol.h */,
+				D26CE368199C49A9002B88D3 /* ProfileDelegate_Protocol.h */,
+				D26CE369199C49A9002B88D3 /* PTDBleDevice.m */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		D26CE34B199C49A9002B88D3 /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE34C199C49A9002B88D3 /* BatteryProfile.h */,
+				D26CE34D199C49A9002B88D3 /* BatteryProfile.m */,
+			);
+			path = Battery;
+			sourceTree = "<group>";
+		};
+		D26CE350199C49A9002B88D3 /* Device Info */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE351199C49A9002B88D3 /* DevInfoProfile.h */,
+				D26CE352199C49A9002B88D3 /* DevInfoProfile.m */,
+			);
+			path = "Device Info";
+			sourceTree = "<group>";
+		};
+		D26CE353199C49A9002B88D3 /* Gatt Serial */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE354199C49A9002B88D3 /* GattSerialProfile.h */,
+				D26CE355199C49A9002B88D3 /* GattSerialProfile.m */,
+				D26CE356199C49A9002B88D3 /* Transport */,
+			);
+			path = "Gatt Serial";
+			sourceTree = "<group>";
+		};
+		D26CE356199C49A9002B88D3 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE357199C49A9002B88D3 /* GattCharacteristicHandler.h */,
+				D26CE358199C49A9002B88D3 /* GattCharacteristicObserver.h */,
+				D26CE359199C49A9002B88D3 /* GattPacket.h */,
+				D26CE35A199C49A9002B88D3 /* GattPacket.m */,
+				D26CE35B199C49A9002B88D3 /* GattSerialMessage.h */,
+				D26CE35C199C49A9002B88D3 /* GattSerialMessage.m */,
+				D26CE35D199C49A9002B88D3 /* GattSerialMessageRxAssembler.h */,
+				D26CE35E199C49A9002B88D3 /* GattSerialMessageRxAssembler.m */,
+				D26CE35F199C49A9002B88D3 /* GattSerialTransport.h */,
+				D26CE360199C49A9002B88D3 /* GattSerialTransport.m */,
+				D26CE361199C49A9002B88D3 /* GattTransport.h */,
+				D26CE362199C49A9002B88D3 /* GattTransport.m */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		D26CE363199C49A9002B88D3 /* OAD */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE364199C49A9002B88D3 /* oad.h */,
+				D26CE365199C49A9002B88D3 /* OadProfile.h */,
+				D26CE366199C49A9002B88D3 /* OadProfile.m */,
+			);
+			path = OAD;
+			sourceTree = "<group>";
+		};
+		D26CE36F199C49A9002B88D3 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				D26CE370199C49A9002B88D3 /* PTDBean.h */,
+				D26CE371199C49A9002B88D3 /* PTDBeanManager.h */,
+				D26CE372199C49A9002B88D3 /* PTDBeanRadioConfig.h */,
+				D26CE373199C49A9002B88D3 /* PTDBleDevice.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D26CE22A199C47D8002B88D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26CE37B199C49A9002B88D3 /* NSData+CRC.h in Headers */,
+				D26CE376199C49A9002B88D3 /* BEAN_Globals.h in Headers */,
+				D26CE3AD199C4CEE002B88D3 /* AppMessageTypes.h in Headers */,
+				D26CE387199C49A9002B88D3 /* GattSerialProfile.h in Headers */,
+				D26CE379199C49A9002B88D3 /* CBPeripheral+UniqueId.h in Headers */,
+				D26CE399199C49A9002B88D3 /* ProfileDelegate_Protocol.h in Headers */,
+				D26CE385199C49A9002B88D3 /* DevInfoProfile.h in Headers */,
+				D26CE3A3199C49A9002B88D3 /* PTDBleDevice.h in Headers */,
+				D26CE37F199C49A9002B88D3 /* PTDBEAN_Helper.h in Headers */,
+				D26CE398199C49A9002B88D3 /* Profile_Protocol.h in Headers */,
+				D26CE3AC199C4CEE002B88D3 /* AppMessages.h in Headers */,
+				D26CE383199C49A9002B88D3 /* BleProfile.h in Headers */,
+				D26CE377199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.h in Headers */,
+				D26CE233199C47D8002B88D3 /* SwiftBean.h in Headers */,
+				D26CE374199C49A9002B88D3 /* AppMessagingLayer.h in Headers */,
+				D26CE3A1199C49A9002B88D3 /* PTDBeanManager.h in Headers */,
+				D26CE3A9199C4B46002B88D3 /* PrefixHeader.pch in Headers */,
+				D26CE39C199C49A9002B88D3 /* PTDBean+Protected.h in Headers */,
+				D26CE3A0199C49A9002B88D3 /* PTDBean.h in Headers */,
+				D26CE391199C49A9002B88D3 /* GattSerialTransport.h in Headers */,
+				D26CE396199C49A9002B88D3 /* OadProfile.h in Headers */,
+				D26CE3A2199C49A9002B88D3 /* PTDBeanRadioConfig.h in Headers */,
+				D26CE389199C49A9002B88D3 /* GattCharacteristicHandler.h in Headers */,
+				D26CE38F199C49A9002B88D3 /* GattSerialMessageRxAssembler.h in Headers */,
+				D26CE38B199C49A9002B88D3 /* GattPacket.h in Headers */,
+				D26CE39E199C49A9002B88D3 /* PTDBeanManager+Protected.h in Headers */,
+				D26CE381199C49A9002B88D3 /* BatteryProfile.h in Headers */,
+				D26CE37D199C49A9002B88D3 /* BEAN_Helper.h in Headers */,
+				D26CE38D199C49A9002B88D3 /* GattSerialMessage.h in Headers */,
+				D26CE393199C49A9002B88D3 /* GattTransport.h in Headers */,
+				D26CE38A199C49A9002B88D3 /* GattCharacteristicObserver.h in Headers */,
+				D26CE395199C49A9002B88D3 /* oad.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D26CE22C199C47D8002B88D3 /* SwiftBean */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D26CE240199C47D8002B88D3 /* Build configuration list for PBXNativeTarget "SwiftBean" */;
+			buildPhases = (
+				D26CE228199C47D8002B88D3 /* Sources */,
+				D26CE229199C47D8002B88D3 /* Frameworks */,
+				D26CE22A199C47D8002B88D3 /* Headers */,
+				D26CE22B199C47D8002B88D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftBean;
+			productName = SwiftBean;
+			productReference = D26CE22D199C47D8002B88D3 /* SwiftBean.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D26CE237199C47D8002B88D3 /* SwiftBeanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D26CE243199C47D8002B88D3 /* Build configuration list for PBXNativeTarget "SwiftBeanTests" */;
+			buildPhases = (
+				D26CE234199C47D8002B88D3 /* Sources */,
+				D26CE235199C47D8002B88D3 /* Frameworks */,
+				D26CE236199C47D8002B88D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftBeanTests;
+			productName = SwiftBeanTests;
+			productReference = D26CE238199C47D8002B88D3 /* SwiftBeanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D26CE224199C47D8002B88D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Scott Wadden";
+				TargetAttributes = {
+					D26CE22C199C47D8002B88D3 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					D26CE237199C47D8002B88D3 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = D26CE227199C47D8002B88D3 /* Build configuration list for PBXProject "SwiftBean" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D26CE223199C47D8002B88D3;
+			productRefGroup = D26CE22E199C47D8002B88D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D26CE22C199C47D8002B88D3 /* SwiftBean */,
+				D26CE237199C47D8002B88D3 /* SwiftBeanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D26CE22B199C47D8002B88D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26CE236199C47D8002B88D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D26CE228199C47D8002B88D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26CE37A199C49A9002B88D3 /* CBPeripheral+UniqueId.m in Sources */,
+				D26CE386199C49A9002B88D3 /* DevInfoProfile.m in Sources */,
+				D26CE37E199C49A9002B88D3 /* BEAN_Helper.m in Sources */,
+				D26CE39A199C49A9002B88D3 /* PTDBleDevice.m in Sources */,
+				D26CE380199C49A9002B88D3 /* PTDBEAN_Helper.m in Sources */,
+				D26CE384199C49A9002B88D3 /* BleProfile.m in Sources */,
+				D26CE39F199C49A9002B88D3 /* PTDBeanRadioConfig.m in Sources */,
+				D26CE392199C49A9002B88D3 /* GattSerialTransport.m in Sources */,
+				D26CE390199C49A9002B88D3 /* GattSerialMessageRxAssembler.m in Sources */,
+				D26CE37C199C49A9002B88D3 /* NSData+CRC.m in Sources */,
+				D26CE378199C49A9002B88D3 /* CBPeripheral+isConnected_Universal.m in Sources */,
+				D26CE39B199C49A9002B88D3 /* PTDBean.m in Sources */,
+				D26CE38E199C49A9002B88D3 /* GattSerialMessage.m in Sources */,
+				D26CE388199C49A9002B88D3 /* GattSerialProfile.m in Sources */,
+				D26CE382199C49A9002B88D3 /* BatteryProfile.m in Sources */,
+				D26CE397199C49A9002B88D3 /* OadProfile.m in Sources */,
+				D26CE375199C49A9002B88D3 /* AppMessagingLayer.m in Sources */,
+				D26CE38C199C49A9002B88D3 /* GattPacket.m in Sources */,
+				D26CE394199C49A9002B88D3 /* GattTransport.m in Sources */,
+				D26CE39D199C49A9002B88D3 /* PTDBeanManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D26CE234199C47D8002B88D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26CE23D199C47D8002B88D3 /* SwiftBeanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D26CE23E199C47D8002B88D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D26CE23F199C47D8002B88D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D26CE241199C47D8002B88D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = SwiftBean/PrefixHeader.pch;
+				INFOPLIST_FILE = SwiftBean/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D26CE242199C47D8002B88D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = SwiftBean/PrefixHeader.pch;
+				INFOPLIST_FILE = SwiftBean/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D26CE244199C47D8002B88D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftBeanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D26CE245199C47D8002B88D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftBeanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D26CE227199C47D8002B88D3 /* Build configuration list for PBXProject "SwiftBean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26CE23E199C47D8002B88D3 /* Debug */,
+				D26CE23F199C47D8002B88D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D26CE240199C47D8002B88D3 /* Build configuration list for PBXNativeTarget "SwiftBean" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26CE241199C47D8002B88D3 /* Debug */,
+				D26CE242199C47D8002B88D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D26CE243199C47D8002B88D3 /* Build configuration list for PBXNativeTarget "SwiftBeanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D26CE244199C47D8002B88D3 /* Debug */,
+				D26CE245199C47D8002B88D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D26CE224199C47D8002B88D3 /* Project object */;
+}
