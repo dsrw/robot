@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D26CE247199C4818002B88D3 /* SwiftBean.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26CE246199C4818002B88D3 /* SwiftBean.framework */; };
 		D285FB6D199B35830004E5BA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285FB6C199B35830004E5BA /* main.swift */; };
 		D285FB6F199B35830004E5BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D285FB6E199B35830004E5BA /* AppDelegate.swift */; };
 		D285FB71199B35830004E5BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D285FB70199B35830004E5BA /* Images.xcassets */; };
@@ -16,6 +15,7 @@
 		D285FC63199C19670004E5BA /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = D285FC62199C19670004E5BA /* test.m */; };
 		D285FC9C199C2CFC0004E5BA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D285FC9A199C2CFC0004E5BA /* CoreBluetooth.framework */; };
 		D285FC9D199C2CFC0004E5BA /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D285FC9B199C2CFC0004E5BA /* IOBluetooth.framework */; };
+		D2904D5919A1692F0061C71C /* Robot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2904D5819A1692F0061C71C /* Robot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D26CE246199C4818002B88D3 /* SwiftBean.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftBean.framework; path = ../SwiftBean/build/Debug/SwiftBean.framework; sourceTree = "<group>"; };
 		D285FB67199B35830004E5BA /* bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D285FB6B199B35830004E5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D285FB6C199B35830004E5BA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		D285FC98199C2C830004E5BA /* Bean.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bean.framework; path = "../../Library/Developer/Xcode/DerivedData/bot-gekdwnfjxafyqperancppqxxkeva/Build/Products/Debug/Bean.framework"; sourceTree = "<group>"; };
 		D285FC9A199C2CFC0004E5BA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		D285FC9B199C2CFC0004E5BA /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		D2904D5819A1692F0061C71C /* Robot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Robot.framework; path = "../../Library/Developer/Xcode/DerivedData/bot-gekdwnfjxafyqperancppqxxkeva/Build/Products/Debug/Robot.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D26CE247199C4818002B88D3 /* SwiftBean.framework in Frameworks */,
+				D2904D5919A1692F0061C71C /* Robot.framework in Frameworks */,
 				D285FC9C199C2CFC0004E5BA /* CoreBluetooth.framework in Frameworks */,
 				D285FC9D199C2CFC0004E5BA /* IOBluetooth.framework in Frameworks */,
 			);
@@ -71,7 +71,7 @@
 		D285FB5E199B35830004E5BA = {
 			isa = PBXGroup;
 			children = (
-				D26CE246199C4818002B88D3 /* SwiftBean.framework */,
+				D2904D5819A1692F0061C71C /* Robot.framework */,
 				D285FC9A199C2CFC0004E5BA /* CoreBluetooth.framework */,
 				D285FC9B199C2CFC0004E5BA /* IOBluetooth.framework */,
 				D285FC98199C2C830004E5BA /* Bean.framework */,

@@ -7,13 +7,19 @@
 //
 
 import Cocoa
+import Robot
 
 class AppDelegate: NSObject, NSApplicationDelegate {
                             
     @IBOutlet weak var window: NSWindow!
+    var robot = Robot()
+    
 
 
     func applicationDidFinishLaunching(aNotification: NSNotification?) {
+        var bean = robot.connect()
+        bean.
+        //var hi = "hi"
         // Insert code here to initialize your application
     }
 

@@ -4,25 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SwiftBean.xcscheme</key>
+		<key>Robot.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
-		<key>SwiftBeanTests.xcscheme</key>
+		<key>RobotTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D26CE22C199C47D8002B88D3</key>
+		<key>D2A3237C19A166E80024F5F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D26CE237199C47D8002B88D3</key>
+		<key>D2A3238719A166E90024F5F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -63,6 +63,7 @@
 		D26CE3A9199C4B46002B88D3 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = D26CE3A8199C4B46002B88D3 /* PrefixHeader.pch */; };
 		D26CE3AC199C4CEE002B88D3 /* AppMessages.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE3AA199C4CEE002B88D3 /* AppMessages.h */; };
 		D26CE3AD199C4CEE002B88D3 /* AppMessageTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D26CE3AB199C4CEE002B88D3 /* AppMessageTypes.h */; };
+		D2A3236F19A1005C0024F5F7 /* connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A3236E19A1005C0024F5F7 /* connection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		D26CE3A8199C4B46002B88D3 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D26CE3AA199C4CEE002B88D3 /* AppMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessages.h; sourceTree = "<group>"; };
 		D26CE3AB199C4CEE002B88D3 /* AppMessageTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMessageTypes.h; sourceTree = "<group>"; };
+		D2A3236E19A1005C0024F5F7 /* connection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = connection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		D26CE22F199C47D8002B88D3 /* SwiftBean */ = {
 			isa = PBXGroup;
 			children = (
+				D2A3236E19A1005C0024F5F7 /* connection.swift */,
 				D26CE3AA199C4CEE002B88D3 /* AppMessages.h */,
 				D26CE3AB199C4CEE002B88D3 /* AppMessageTypes.h */,
 				D26CE3A8199C4B46002B88D3 /* PrefixHeader.pch */,
@@ -186,9 +189,9 @@
 				D26CE36C199C49A9002B88D3 /* PTDBeanManager.m */,
 				D26CE36D199C49A9002B88D3 /* PTDBeanManager+Protected.h */,
 				D26CE36E199C49A9002B88D3 /* PTDBeanRadioConfig.m */,
-				D26CE232199C47D8002B88D3 /* SwiftBean.h */,
 				D26CE36F199C49A9002B88D3 /* Public */,
 				D26CE230199C47D8002B88D3 /* Supporting Files */,
+				D26CE232199C47D8002B88D3 /* SwiftBean.h */,
 			);
 			path = SwiftBean;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				D26CE382199C49A9002B88D3 /* BatteryProfile.m in Sources */,
 				D26CE397199C49A9002B88D3 /* OadProfile.m in Sources */,
 				D26CE375199C49A9002B88D3 /* AppMessagingLayer.m in Sources */,
+				D2A3236F19A1005C0024F5F7 /* connection.swift in Sources */,
 				D26CE38C199C49A9002B88D3 /* GattPacket.m in Sources */,
 				D26CE394199C49A9002B88D3 /* GattTransport.m in Sources */,
 				D26CE39D199C49A9002B88D3 /* PTDBeanManager.m in Sources */,
@@ -589,6 +593,7 @@
 		D26CE241199C47D8002B88D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -601,12 +606,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D26CE242199C47D8002B88D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -673,6 +680,7 @@
 				D26CE242199C47D8002B88D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D26CE243199C47D8002B88D3 /* Build configuration list for PBXNativeTarget "SwiftBeanTests" */ = {
 			isa = XCConfigurationList;
@@ -681,6 +689,7 @@
 				D26CE245199C47D8002B88D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

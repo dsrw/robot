@@ -7,10 +7,5 @@
 //
 
 import Cocoa
-//import Bean
-import SwiftBean
-
-var bean = PTDBeanManager()
-
 
 NSApplicationMain(C_ARGC, C_ARGV)
